@@ -8,7 +8,6 @@ module.exports = {
       const stations = getStations();
       const availability = getAvailability();
       const joinedStations = arrayJoin(await stations, await availability, { key: 'id' });
-      console.log(joinedStations);
       return {isError: false, data: joinedStations};
     } catch (error) {
       return {
