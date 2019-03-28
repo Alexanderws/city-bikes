@@ -2,9 +2,14 @@
 A version of the City Bikes with a backend server for proper API calls outside the browser.
 
 
-(this guide assumes you already have Node.js installed, otherwise check out: https://nodejs.org/en/download/)
+### NOTE:
+The CityBikes API is undergoing maintenance intermittently. In these periods the app is unable to load the station data.
 
-### To run:
+
+
+
+#### To run:
+(this guide assumes you already have Node.js installed, otherwise check out: https://nodejs.org/en/download/)
 
 1. Clone this repository
 2. In the root folder -> run "npm install" to install dependencies for the server
@@ -18,12 +23,11 @@ Runs the app in the development mode. Open http://localhost:3000 to view it in t
 To view the stations in a map view, hit the button named "MAP" in the upper right corner.
 
 
-### To run tests:
+#### To run tests:
 1. In the folder client -> run "npm test" to open test console (this will run tests on files changed since last commit)
 2. To run all tests, enter 'a' in the active environment
 
 
 
 
-## NOTE:
-The CityBikes API has had some maintenance recently, making the data loading impossible.
+
