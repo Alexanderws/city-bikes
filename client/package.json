@@ -10,6 +10,7 @@
     "react-dom": "^16.8.4",
     "react-epic-spinners": "^0.3.0",
     "react-scripts": "2.1.8",
+    "react-spinkit": "^3.0.0",
     "react-test-renderer": "^16.8.5",
     "tachyons": "^4.11.1"
   },
@@ -21,11 +22,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "jest": {
-    "modulePaths": [
-      "<rootDir>"
-    ]
   },
   "browserslist": [
     ">0.2%",

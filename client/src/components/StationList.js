@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+//import { HalfCircleSpinner } from 'react-epic-spinners';
 import { StationCard } from './';
-import { HalfCircleSpinner } from 'react-epic-spinners';
+var Spinner = require('react-spinkit');
 
 class StationList extends Component {
   constructor() {
@@ -45,7 +46,7 @@ class StationList extends Component {
     } else if(!stationsLoaded) {
       return(
         <div className="flex items-center justify-center vh-100 w-100">
-          <HalfCircleSpinner color="black"/>
+          <Spinner name='rotating-plane' color="black"/>
         </div>
       )
     } else {
