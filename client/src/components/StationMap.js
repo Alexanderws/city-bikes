@@ -44,9 +44,9 @@ export class MapContainer extends Component {
     const stationMarkers = this.state.stations
       .map( station =>
         <Marker
-          key={station.id}
+          key={station.station_id}
           doctor={station}
-          position={{lat: station.center.latitude, lng: station.center.longitude}}
+          position={{lat: station.lat, lng: station.lon}}
           icon={bikeStation}
         />
     );

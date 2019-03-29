@@ -22,9 +22,8 @@ class StationList extends Component {
     return body;
   }
 
-  componentDidMount() {
-    this.fetchStations()
-    .then(res => {
+  populateStations() {
+    this.fetchStations().then(res => {
       this.setState({
         stations: res,
         stationsLoaded: true
@@ -36,8 +35,17 @@ class StationList extends Component {
     }));
   }
 
+  componentDidMount() {
+    this.populateStations();
+  }
+
   render() {
     const {stations, stationsLoaded, isError} = this.state;
+    console.log("RENDER: ");
+    stations.map(st => {
+      console.log(st);
+      return st;
+    })
     if (isError || (stationsLoaded && stations.length < 1)) {
       console.log("StationList.render() - Error");
       return(
@@ -53,7 +61,7 @@ class StationList extends Component {
       return (
           <div className='pa3 mt5'>
           {stations.map(station => (
-            <StationCard key={station.id} station={station} />
+            <StationCard key={station.station_id} station={station} />
           ))}
           </div>
       );

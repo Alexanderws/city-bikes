@@ -3,7 +3,7 @@ import { StationCard } from './';
 import { shallow } from 'enzyme';
 
 const testStation = {
-  title: "TestTitle",
+  name: "TestTitle",
   subtitle: "TestSubTitle",
   availability: []
 }
