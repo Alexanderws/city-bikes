@@ -6,7 +6,7 @@ The CityBikes API is undergoing maintenance intermittently. In these periods the
 </br></br></br>
 ### To run:
 (this guide assumes you already have Node.js installed, otherwise check out: https://nodejs.org/en/download/)</br>
-This app requires an API key from Oslo Bysykkel: https://developer.oslobysykkel.no/api</br>
+This app requires an API key from Oslo Bysykkel: ~~https://developer.oslobysykkel.no/api~~ (this seems to be down, now getting data from https://oslobysykkel.no/apne-data/sanntid)</br> 
 This app requires an API key from Google Maps: https://cloud.google.com/maps-platform/</br>
 
 **Steps**
